@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1024px) {
+  /*grid rules*/
+  .row {
+    grid-template-columns: auto auto auto auto;
+    justify-content: unset;
+  }
+
+  footer {
+    background-color: blue;
+  }
+} /**end of media query*/
