@@ -1,9 +1,15 @@
+/*general settings */
+:root {
+  --primary: rgb(248, 247, 247);
+}
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-* {
+*,
+*::before,
+*::after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -13,6 +19,8 @@ body {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  position: relative;
+  background: rgb(243, 241, 241)
 }
 
 /* grid rules*/
@@ -20,17 +28,16 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 0.625rem;
-
 }
+
 .limited {
   max-width: 950px;
   margin: auto;
 }
-.column {
-  /* border: solid 2px #fff; */
+.column{
   padding: 0.625rem;
+  margin: 0 20px
 }
-
 /* header section */
 header {
   background-color: rgb(169, 169, 243);
@@ -45,13 +52,90 @@ header img {
 .header-text {
   padding: 1rem;
 }
-header h1, header h2{
-    margin: auto;
-    font-style: italic;
-    color: #fff;
-    font-weight: 600;
+header h1,
+header h2 {
+  margin: auto;
+  font-style: italic;
+  color: black;
+  font-weight: 600;
 }
 
+/* nav section*/
+nav {
+  background: #49d0a7;
+}
+nav ul {
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 1em 0;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+nav ul li.active {
+  background: rgba(0, 0, 0, 0.652);
+}
+nav ul li:hover {
+  background: rgba(0, 0, 0, 0.452);
+}
+.ul-sect {
+  display: none;
+}
+.open {
+  display: block;
+  transition: 2000ms;
+}
+.transparent {
+  background: rgba(31, 30, 30, 0.452);
+}
+button {
+  border: none;
+  color: #fff;
+  background: transparent;
+}
+
+/*Hero section */
+figure.column {
+  padding: 10px 0;
+}
+main img.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+/*product section */
+.products {
+  margin: 2rem 0
+}
+main h2.column{
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color:rgb(177, 174, 174)
+}
+figure.pie{
+  background: #fff;
+  /* border-radius: 5px; */
+  box-shadow: 
+}
+figure.pie h5{
+  margin: 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: rgba(145, 145, 196, 0.863);
+  text-transform: capitalize;
+  font-style: oblique;
+}
+figcaption{
+  text-transform: italic;
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px
+}
 
 /*footer section*/
 footer {

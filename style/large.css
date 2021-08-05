@@ -4,8 +4,18 @@
     grid-template-columns: auto auto auto auto;
     justify-content: unset;
   }
-
+  .large-12{
+    max-width: 500px;
+    margin-left: 160px
+  }
+  .img-sec{
+    grid-template-columns: auto;
+  }
+  .column{
+    padding: 0;
+    margin: 0
+  }
   footer {
-    background-color: blue;
+    
   }
 } /**end of media query*/
