@@ -20,9 +20,13 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   position: relative;
-  background: rgb(243, 241, 241)
+  background: rgba(186, 187, 187, 0.288)
 }
 
+a{
+  text-decoration: none;
+  color: #fff
+}
 /* grid rules*/
 .row {
   display: grid;
@@ -38,6 +42,10 @@ body {
   padding: 0.625rem;
   margin: 0 20px
 }
+.pie-img{
+  grid-template-columns: auto auto;
+  margin: 20px auto
+}
 /* header section */
 header {
   background-color: rgb(169, 169, 243);
@@ -46,7 +54,7 @@ header {
 header > div > section {
   display: flex;
 }
-header img {
+header img{
   width: 15%;
 }
 .header-text {
@@ -77,6 +85,9 @@ nav ul li {
 nav ul li.active {
   background: rgba(0, 0, 0, 0.652);
 }
+nav ul li a{
+  
+}
 nav ul li:hover {
   background: rgba(0, 0, 0, 0.452);
 }
@@ -94,6 +105,7 @@ button {
   border: none;
   color: #fff;
   background: transparent;
+  font-size: 2rem
 }
 
 /*Hero section */
@@ -119,8 +131,12 @@ main h2.column{
 }
 figure.pie{
   background: #fff;
-  /* border-radius: 5px; */
-  box-shadow: 
+  border-top: solid 5px #49d0a7;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+figure.pie:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+             cursor: pointer
 }
 figure.pie h5{
   margin: 0;
