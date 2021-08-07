@@ -12,33 +12,44 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="style/small.css" type="text/css" />
-    <link rel="stylesheet" href="style/medium.css" type="text/css" />
-    <link rel="stylesheet" href="style/large.css" type="text/css" />
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
     <script src="index.js" defer></script>
   </head>
   <body>
     <header class="">
-      <div class="row limited">
+      <div class="row limited header-flex">
         <section class="column">
           <img src="images/logo.svg" alt="pie-logo" />
           <div class="header-text">
             <h1><a href="index.html">Bethany's</a></h1>
             <h2><a href="index.html">Pie Shop</a></h2>
+           
           </div>
         </section>
+        <div>
+        <label class="switch">
+          <input type='checkbox' class="switch-input" >
+          <span class='slider round'></span>
+        </div>
+        </label>
       </div>
       <!--end of header row-->
     </header>
-    <nav>
+    
+    <nav class='nav-bar'>
+      <div class="">
       <button class="column nav-btn">
         &#9776;
       </button>
+      <label class="switch">
+        <input type='checkbox' class="switch-input" >
+        <span class='slider round'></span>
+      </label>
+    </div>
       <section class="ul-sect" id="nav-sect">
         <ul class="row limited small-12 medium-6 large-12">
           <li class="nav-list active"><a href='#specials'>Specials</a></li>
-          <li class="nav-list"><a href='#'>Cheese Cakes</a></li>
+          <li class="nav-list"><a href='cheese.html'>Cheese Cakes</a></li>
           <li class="nav-list"><a href="gallery.html">Fruit Pies</a></li>
           <li class="nav-list"><a href='#'>Swag Shop</a></li>
         </ul>
@@ -48,9 +59,9 @@
 
     <!--main section begins-->
     <main>
-      <section class='row limited img-sec'>
+      <section class='row limited small-12'>
         <figure class="column">
-          <img src='images/hero.jpg' alt='Bethany Hero Image' class="hero-img">
+          <img src='images/hero.jpg' alt='Bethany Hero Image' class="hero-img" width="1140" height="961px">
         </figure>
       </section> <!--end of hero section-->
 
@@ -58,26 +69,38 @@
       <section class='row limited'>
         <h2 class="column">This Week's Specials</h2>
       </section> 
-      <section class='row limited prod-img'>
+      <section class='row limited medium-6'>
         <figure class="column pie">
           <h5>Apple pie</h5>
           <img src='images/products/pie-apple.jpg' alt='apple-pie' class="hero-img">
+          <div class='price'>
           <figcaption>$20.99</figcaption>
+          <button class="order-btn">Order</button>
+        </div>
         </figure>
         <figure class="column pie">
           <h5>Cherry pie</h5>
           <img src='images/products/pie-cherry.jpg' alt='cherry-pie' class="hero-img">
-          <figcaption>$20.99</figcaption>
+          <div class='price'>
+            <figcaption>$20.99</figcaption>
+            <button class="order-btn">Order</button>
+          </div>
         </figure>
         <figure class="column pie">
           <h5>Cranberry pie</h5>
           <img src='images/products/pie-cranberry.jpg' alt='cranberry-pie' class="hero-img">
-          <figcaption>$20.99</figcaption>
+          <div class='price'>
+            <figcaption>$20.99</figcaption>
+            <button class="order-btn">Order</button>
+          </div>
         </figure>
         <figure class="column pie">
           <h5>Peach pie</h5>
           <img src='images/products/pie-peach.jpg' alt='peach-pie' class="hero-img">
-          <figcaption>$20.99</figcaption>
+          <div class='price'>
+            <figcaption>$20.99</figcaption>
+            <button class="order-btn">Order</button>
+          </div>
         </figure>
       </section> 
     </div><!--end of specials section-->
