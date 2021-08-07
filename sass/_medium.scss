@@ -1,0 +1,47 @@
+/* grid rules*/
+.row {
+  grid-template-columns: auto auto;
+}
+.medium-6 {
+  grid-template-columns: auto auto auto auto;
+}
+/* header section */
+header {
+  h1 {
+    font-size: 2.5rem;
+  }
+  label.switch{
+    display: block
+}
+input:checked + .slider{
+    background:  rgb(54, 5, 99);
+ }
+} /* end of header section */
+
+/* main section */
+main {
+  .small-12{
+    grid-template-columns: auto;
+  }
+
+  .medium-6{
+    grid-template-columns: auto auto;
+  }
+  .medium-4 {
+    grid-template-columns: auto auto auto;
+  }
+} /* end of main section */
+
+/* nav section */
+nav {
+  .ul-sect {
+    display: block;
+  }
+  .switch{
+      display: none
+  }
+  .nav-btn {
+    display: none;
+  }
+ 
+} /* end of nav section */

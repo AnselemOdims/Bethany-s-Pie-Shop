@@ -1,0 +1,29 @@
+/*grid rules*/
+.row {
+  grid-template-columns: auto auto auto auto;
+  justify-content: unset;
+}
+.large-12 {
+  max-width: 500px;
+  margin-left: 160px;
+}
+.column {
+  padding: 0;
+  margin: 0;
+}
+
+/* main section */
+main {
+  .row {
+    grid-template-columns: auto auto auto auto;
+  }
+  .small-12{
+    grid-template-columns: auto;
+  }
+  figure.pie{
+    button.order-btn{
+        padding: 10px 1.5rem;
+    }
+  }
+
+}
