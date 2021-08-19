@@ -48,6 +48,8 @@ a {
   // grid-template-columns: auto auto;
   margin: 20px auto;
 }
+
+
 /* header section */
 header {
   background-color: $primaryColor;
@@ -243,14 +245,28 @@ main {
 footer {
   background: $primaryColor;
   font-size: 1.2rem;
-  position: absolute;
-  width: 100%;
-  bottom: 0
 
 
   h2 {
     font-style: italic;
     text-transform: uppercase;
+  }
+
+  ul.socials{
+    list-style: none;
+    margin: 0;
+    padding: 0
+  }
+  ul.socials li{
+    display: flex;
+    align-items: center;
+    margin: 12px 0
+  }
+  ul.socials img{
+    width: 8%;
+    margin: 0 10px 0 12px;
+    background: #fff;
+    border-radius: 5px
   }
 }
 

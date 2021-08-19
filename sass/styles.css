@@ -649,11 +649,34 @@ main figure.pie button.order-btn:hover {
 footer {
   background: #a9a9f3;
   font-size: 1.2rem;
-  position: absolute;
-  width: 100%;
-  bottom: 0 h2;
-  bottom-font-style: italic;
-  bottom-text-transform: uppercase;
+}
+
+footer h2 {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+footer ul.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul.socials li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 0;
+}
+
+footer ul.socials img {
+  width: 8%;
+  margin: 0 10px 0 12px;
+  background: #fff;
+  border-radius: 5px;
 }
 
 /* dark mode */

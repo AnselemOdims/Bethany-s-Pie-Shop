@@ -15,7 +15,6 @@ try{
     // nav-bar dropdown for small screen
     openBtn.addEventListener('click', ()=>{
         navBar.classList.toggle('open');
-        // main.classList.toggle('transparent')
     })
 
     // nav list active toggle
@@ -28,14 +27,14 @@ try{
 
     // Dark theme controller 
     switchBox.forEach(item=>{
-        item.addEventListener('click', ()=>{
+        item.addEventListener('click', (event)=>{
             header.classList.toggle('dark-1');
             body.classList.toggle('dark-2')
             footer.classList.toggle('dark-1');
             pieCard.forEach(item=>{
                 item.classList.toggle('dark-3')
             })
-            orderBtn.forEach(item=>{
+            orderBtn.forEach(item=>{               
                 item.classList.toggle('dark-4')
             })
             nav.classList.toggle('dark-4')
