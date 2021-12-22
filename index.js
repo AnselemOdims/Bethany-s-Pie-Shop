@@ -8,7 +8,11 @@ const footer = document.querySelector('footer')
 const pieCard = document.querySelectorAll('figure.pie')
 const nav = document.querySelector('nav')
 const orderBtn = document.querySelectorAll('main figure.pie button.order-btn');
-const main = document.querySelector('main')
+const main = document.querySelector('main');
+const location1 = document.querySelector('.get-location')
+const location2 = document.querySelector('.watch-location')
+const locationSection = document.querySelector('#location-section')
+const mapSec = document.querySelector('.map')
  
 try{
 
@@ -41,6 +45,28 @@ try{
         })
     })
     
+    //Get location and map using the geolocation WebAPI and OpenLayer API
+    location1.addEventListener('click', e=>{
+        const success = async pos=> {
+            const userPos = await pos.coords
+            const {latitude, longitude} = userPos
+            mapSec.style.height = '400px'
+            let map = new ol.Map({
+                target: 'map',
+                layers: [
+                  new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                  })
+                ],
+                view: new ol.View({
+                  center: ol.proj.fromLonLat([latitude, longitude]),
+                  zoom: 4
+                })
+              });
+        }
+        const error = err => console.log(err)
+        navigator.geolocation.getCurrentPosition(success, error);
+    },{once: true})
 }
 catch(err){
     console.error(err)

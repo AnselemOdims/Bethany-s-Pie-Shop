@@ -21,6 +21,7 @@ body {
   font-weight: 300;
   position: relative;
   background: $backgroundColor;
+  background-image: url(../images/Ngaruroro.svg);
 }
 
 a {
@@ -31,7 +32,8 @@ a {
 /* grid rules*/
 .row {
   display: grid;
-  grid-gap: 0.625rem;
+  gap: 0.625rem;
+  grid: auto-flow min-content / repeat(auto-fit, minmax(14rem, 1fr));
 }
 .limited {
   max-width: 950px;
@@ -41,14 +43,10 @@ a {
   padding: 0.625rem;
   margin: 0 20px;
 }
-.small-12 {
-  grid-template-columns: auto;
-}
+
 .small-6 {
-  // grid-template-columns: auto auto;
   margin: 20px auto;
 }
-
 
 /* header section */
 header {
@@ -83,7 +81,6 @@ header {
 /* nav section*/
 .nav-bar {
   background: $accentColor;
-  
 }
 nav,
 header {
@@ -137,7 +134,7 @@ header {
     transform: translateX(26px);
   }
   .slider.round {
-   border-radius: 50px;
+    border-radius: 50px;
   }
   .slider.round:before {
     border-radius: 50%;
@@ -161,13 +158,12 @@ header {
   }
   .ul-sect {
     display: none;
-    
   }
   .open {
     display: block;
     height: 300px;
   }
-  
+
   button {
     border: none;
     color: #fff;
@@ -178,6 +174,7 @@ header {
 
 /*main section */
 main {
+
   figure.column {
     padding: 10px 0;
   }
@@ -201,7 +198,7 @@ main {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 3px;
-
+    
     :hover {
       cursor: pointer;
     }
@@ -240,33 +237,41 @@ main {
       transform: scale(1.08);
     }
   }
+  
 }
+
+/* map section */
+.map {
+  // height: 400px;
+  width: 100%;
+  margin: 20px 0
+}
+
 /*footer section*/
 footer {
   background: $primaryColor;
   font-size: 1.2rem;
-
 
   h2 {
     font-style: italic;
     text-transform: uppercase;
   }
 
-  ul.socials{
+  ul.socials {
     list-style: none;
     margin: 0;
-    padding: 0
+    padding: 0;
   }
-  ul.socials li{
+  ul.socials li {
     display: flex;
     align-items: center;
-    margin: 12px 0
+    margin: 12px 0;
   }
-  ul.socials img{
+  ul.socials img {
     width: 8%;
     margin: 0 10px 0 12px;
     background: #fff;
-    border-radius: 5px
+    border-radius: 5px;
   }
 }
 
@@ -286,5 +291,5 @@ footer {
   background: #103329 !important;
 }
 .transparent {
-    background: rgba(31, 30, 30, 0.452) !important;
-  }
+  background: rgba(31, 30, 30, 0.452) !important;
+}

@@ -1,10 +1,4 @@
-/* grid rules*/
-.row {
-  grid-template-columns: auto auto;
-}
-.medium-6 {
-  grid-template-columns: auto auto auto auto;
-}
+
 /* header section */
 header {
   h1 {
@@ -18,22 +12,12 @@ input:checked + .slider{
  }
 } /* end of header section */
 
-/* main section */
-main {
-  .small-12{
-    grid-template-columns: auto;
-  }
-
-  .medium-6{
-    grid-template-columns: auto auto;
-  }
-  .medium-4 {
-    grid-template-columns: auto auto auto;
-  }
-} /* end of main section */
 
 /* nav section */
 nav {
+ ul.row{
+    grid: auto / repeat(auto-fill, minmax(5em, 10em))
+  }
   .ul-sect {
     display: block;
   }

@@ -12,7 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    
+    <link rel="stylesheet" href="sass/styles.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/build/ol.js" defer></script>
     <script src="index.js" type="module" defer></script>
   </head>
   <body>
@@ -46,7 +48,7 @@
       </label>
     </div>
       <section class="ul-sect" id="nav-sect">
-        <ul class="row limited small-12 medium-6 large-12">
+        <ul class="row limited">
           <li class="nav-list active"><a href='#specials'>Specials</a></li>
           <li class="nav-list"><a href='cheese.html'>Cheese Cakes</a></li>
           <li class="nav-list"><a href="gallery.html">Fruit Pies</a></li>
@@ -69,7 +71,7 @@
         <h2 class="column">This Week's Specials</h2>
       </section> 
       <section class='row limited medium-6'>
-        <figure class="column pie">
+        <figure class="column pie test">
           <h5>Apple pie</h5>
           <img src='images/products/pie-apple.jpg' alt='apple-pie' class="hero-img">
           <div class='price'>
@@ -103,6 +105,16 @@
         </figure>
       </section> 
     </div><!--end of specials section-->
+    <div id="location-section" >
+      <section class="row limited">
+        <button class="order-btn get-location">Get Location</button>
+      </section>
+      <section class="row limited ">
+        <div class="map" id="map">
+
+        </div>
+      </section>
+    </div>
     </main>
     <footer>
       <div class="row limited">
