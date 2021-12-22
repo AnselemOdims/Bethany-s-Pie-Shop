@@ -1,0 +1,22 @@
+{
+  "name": "bethany-s-pie-shop",
+  "version": "1.0.0",
+  "description": "An online pie ordering shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnselemOdims/Bethany-s-Pie-Shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnselemOdims/Bethany-s-Pie-Shop/issues"
+  },
+  "homepage": "https://github.com/AnselemOdims/Bethany-s-Pie-Shop#readme",
+  "devDependencies": {
+    "hint": "^6.1.4"
+  }
+}

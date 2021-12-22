@@ -364,6 +364,7 @@ body {
   font-weight: 300;
   position: relative;
   background: rgba(186, 187, 187, 0.288);
+  background-image: url(../images/Ngaruroro.svg);
 }
 
 a {
@@ -375,7 +376,8 @@ a {
 .row {
   display: -ms-grid;
   display: grid;
-  grid-gap: 0.625rem;
+  gap: 0.625rem;
+  grid: auto-flow min-content/repeat(auto-fit, minmax(14rem, 1fr));
 }
 
 .limited {
@@ -386,11 +388,6 @@ a {
 .column {
   padding: 0.625rem;
   margin: 0 20px;
-}
-
-.small-12 {
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
 }
 
 .small-6 {
@@ -645,15 +642,44 @@ main figure.pie button.order-btn:hover {
           transform: scale(1.08);
 }
 
+/* map section */
+.map {
+  width: 100%;
+  margin: 20px 0;
+}
+
 /*footer section*/
 footer {
   background: #a9a9f3;
   font-size: 1.2rem;
-  position: absolute;
-  width: 100%;
-  bottom: 0 h2;
-  bottom-font-style: italic;
-  bottom-text-transform: uppercase;
+}
+
+footer h2 {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+footer ul.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul.socials li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 0;
+}
+
+footer ul.socials img {
+  width: 8%;
+  margin: 0 10px 0 12px;
+  background: #fff;
+  border-radius: 5px;
 }
 
 /* dark mode */
@@ -680,15 +706,6 @@ footer {
 }
 
 @media only screen and (min-width: 730px) {
-  /* grid rules*/
-  .row {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
-  .medium-6 {
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
-  }
   /* header section */
   header h1 {
     font-size: 2.5rem;
@@ -700,21 +717,10 @@ footer {
     background: #360563;
   }
   /* end of header section */
-  /* main section */
-  main .small-12 {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  main .medium-6 {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
-  main .medium-4 {
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
-  }
-  /* end of main section */
   /* nav section */
+  nav ul.row {
+    grid: auto/repeat(auto-fill, minmax(5em, 10em));
+  }
   nav .ul-sect {
     display: block;
   }
@@ -728,31 +734,11 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-  /*grid rules*/
-  .row {
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
-  }
-  .large-12 {
-    max-width: 500px;
-    margin-left: 160px;
-  }
   .column {
     padding: 0;
     margin: 0;
   }
   /* main section */
-  main .row {
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
-  }
-  main .small-12 {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
   main figure.pie button.order-btn {
     padding: 10px 1.5rem;
   }
